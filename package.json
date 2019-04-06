@@ -1,0 +1,27 @@
+{
+  "name": "coding-knowledge-tracker",
+  "version": "1.0.0",
+  "description": "A coding concept logger. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwerre1/coding-knowledge-tracker.git"
+  },
+  "keywords": [
+    "knowledge"
+  ],
+  "author": "Jordan Werre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwerre1/coding-knowledge-tracker/issues"
+  },
+  "homepage": "https://github.com/jwerre1/coding-knowledge-tracker#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "mysql": "^2.16.0"
+  }
+}
