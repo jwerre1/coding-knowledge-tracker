@@ -7,14 +7,14 @@ var knowledge = require("../models/knowledge.js");
 router.get("/", function (req, res) {
     knowledge.selectAll(function (data) {
         var hbsObject = {
-            knowledge: Data
+            knowledge: data
         };
-        console.lot(hbsObject);
+        console.log(hbsObject);
         res.render("index", hbsObject);
     });
 });
 
-router.post("/api/knowledge", function (req, res) {
+router.post("/api/knowledge/", function (req, res) {
     knowledge.insertOne([
         "name"
     ], [req.body.name
@@ -29,7 +29,7 @@ router.put("/api/knowledge/:id", function (req, res) {
     console.log("condition", condition);
 
     knowledge.updateOne({
-        mastered: req.body.mastered
+        known: req.body.known
     }, condition, function (result) {
         if (result.changedRows == 0) {
             return res.status(404).end();

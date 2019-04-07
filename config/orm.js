@@ -35,7 +35,7 @@ var orm = {
     selectAll: function(table, cb) {
         var queryString = "select * from " + table + ";";
         connection.query(queryString, function (err, result) {
-            if (eff) {
+            if (err) {
                 throw err;
             }
             cb(result);
@@ -43,14 +43,14 @@ var orm = {
     },
 
     insertOne: function(table, col, val, cb) {
-        var queryString = "insert into " + table + " (" + col.toString() + ") values (" + printQuestionMarks(vals.length) + ");";
+        var queryString = "insert into " + table + " (" + col.toString() + ") values (" + printQuestionMarks(val.length) + ");";
         console.log(queryString);
         connection.query(queryString, val, function(err, result) {
             if (err) {
                 throw err;
             }
 
-            cb(results);
+            cb(result);
         });
     },
 

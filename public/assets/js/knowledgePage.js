@@ -1,6 +1,9 @@
 $(function() {
     $(".change-status").on("click", function(event) {
+  
         var id = $(this).data("id");
+        var newknown = $(this).data("newknown");
+
         var newknownstate = {
             known: newknown
         };
@@ -17,10 +20,11 @@ $(function() {
     });
 
     $(".create-form").on("submit", function(event) {
+        console.log("happening");
         event.preventDefault();
 
         var newTopic = {
-            name: $("#topic").val.trim(),
+            name: $("#topic").val().trim(),
         };
 
         $.ajax("/api/knowledge", {
