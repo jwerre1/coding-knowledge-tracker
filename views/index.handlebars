@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <h1>Coding Knowledge</h1>
+
+        <h2>Keep track of what's been mastered and what needs work</h2>
+    </div>
+
+    <div class="row">
+        {{!-- Needs work --}}
+        <div class="col-md-4">
+            <h2>Needs Work!</h2>
+
+            <ul>
+                {{#each knowledge}}
+                {{#unless known}}
+                {{> knowledge/knowledge-block known=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+
+
+        {{!-- form --}}
+        <div class="col-md-4">
+            <h2>Add a Topic</h2>
+            <form class="create-form">
+
+                <div class="form-group">
+                    <label for="topic">Topic:</label>
+                    <input type="text" id="topic" name="name">
+                </div>
+
+                <button type="submit">Add</button>
+            </form>
+
+        </div>
+
+
+
+
+        {{!-- mastered --}}
+        <div class="col-md-4">
+            <h2>Known!</h2>
+
+            <ul>
+                {{#each knowledge}}
+                {{#if known}}
+                {{> knowledge/knowledge-block sleep=false}}
+                {{/if}}
+                {{/each}}
+            </ul>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+</div>
