@@ -1,6 +1,7 @@
 $(function() {
     $(".change-status").on("click", function(event) {
-  
+        
+        // Grabs values created in knowledge-block.handlebars
         var id = $(this).data("id");
         var newknown = $(this).data("newknown");
 

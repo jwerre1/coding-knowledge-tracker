@@ -20,5 +20,5 @@ var knowledge = {
     }
 };
 
-
+// Export connection for controllers/knowledge_controller.js to use. 
 module.exports = knowledge;

@@ -67,4 +67,5 @@ var orm = {
     }
 }
 
+// Export connection for models/knowledge.js to use. 
 module.exports = orm;

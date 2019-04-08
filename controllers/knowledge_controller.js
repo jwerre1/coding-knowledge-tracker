@@ -39,14 +39,5 @@ router.put("/api/knowledge/:id", function (req, res) {
     });
 });
 
-
-
-
-
-
-
-
-
-
-
+// Export router for server.js to use. 
 module.exports = router;
