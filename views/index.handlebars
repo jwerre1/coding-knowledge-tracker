@@ -1,15 +1,15 @@
 <div class="container">
-    <div class="row">
-        <h1 class="text-center">Coding Knowledge</h1>
+    <div class="row text-center mb-2">
+        <h1 class="mx-auto">Coding Knowledge</h1>
     </div>
-    <div class="row">
-        <h3 class="text-center">Keep track of what's been mastered and what needs work.</h3>
+    <div class="row text-center mb-3">
+        <h4 class="mx-auto">Keep track of what's been mastered and what needs work.</h4>
     </div>
 
     <div class="row">
         {{!-- Needs work --}}
         <div class="col-md-5">
-            <h2>Needs Work!</h2>
+            <h2>Needs Work:</h2>
 
             <ul>
                 {{#each knowledge}}
@@ -26,7 +26,8 @@
 
         {{!-- mastered --}}
         <div class="col-md-5">
-            <h2>Known!</h2>
+            <h2>Known:
+            </h2>
 
             <ul>
                 {{#each knowledge}}
@@ -47,8 +48,8 @@
             <form class="create-form">
 
                 <div class="form-row">
-                    <label for="topic" class="h2 text-center">Add a Topic: </label>
-                    <input type="text" class="form-text" id="topic" name="name" required>
+                    <label for="topic" class="h2 text-center mx-auto">Add a Topic: </label>
+                    <input type="text" class="form-text mx-auto" id="topic" name="name" required>
                 </div>
 
                 <button type="submit" class="btn btn-danger btn-lg">Add</button>
