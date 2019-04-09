@@ -1,5 +1,5 @@
-CREATE DATABASE coding_db;
-use coding_db;
+CREATE DATABASE dqw5jv1y2s2mpdn2;
+use dqw5jv1y2s2mpdn2;
 
 CREATE TABLE knowledge
 (
