@@ -1,6 +1,6 @@
 body {
     /* photo found on pexels.com - CC0 License, free for personal and commercial use without attribution */
-    /* makes background photo fit page, correctly positioned - found on Stack Overflow */
+    /* makes background photo fit page, correctly positioned */
     background: url(../img/ai-close-up-code-160107.jpg) no-repeat center center fixed;
     background-color: lightslategray;
     background-size: cover;
@@ -9,12 +9,11 @@ body {
 
 #textArea {
     background-color: rgba(94, 94, 94, 0.712);
-    margin: 70px auto 25px auto;
-    max-width: 800px;
+    margin: 50px auto 25px auto;
+    max-width: 960px;
     width: 100%;
     padding: 25px 50px;
     text-align: center;
     font-size: 30px;
     color: white;
-    /* font-family: 'IBM Plex Sans', sans-serif; */
 }
